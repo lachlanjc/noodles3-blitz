@@ -2,7 +2,6 @@ import db, { FindManyRecipeArgs } from "db"
 
 type GetRecipesInput = {
   where: FindManyRecipeArgs["where"]
-  include?: FindManyRecipeArgs["include"]
   orderBy?: FindManyRecipeArgs["orderBy"]
   skip?: FindManyRecipeArgs["skip"]
   after?: FindManyRecipeArgs["after"]
@@ -13,7 +12,6 @@ type GetRecipesInput = {
 
 export default async function getRecipes({
   where,
-  include,
   orderBy,
   skip,
   after,
@@ -23,7 +21,6 @@ export default async function getRecipes({
 }: GetRecipesInput) {
   const recipes = await db.recipe.findMany({
     where,
-    include,
     orderBy,
     skip,
     after,
