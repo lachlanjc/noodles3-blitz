@@ -12,7 +12,7 @@
         "source": "postgres"
       },
       "argument": "provider",
-      "value": "\"postgres\""
+      "value": "\"postgresql\""
     },
     {
       "tag": "CreateArgument",
@@ -73,13 +73,6 @@
     {
       "tag": "CreateField",
       "model": "Recipe",
-      "field": "description",
-      "type": "String",
-      "arity": "Required"
-    },
-    {
-      "tag": "CreateField",
-      "model": "Recipe",
       "field": "title",
       "type": "String",
       "arity": "Required"
@@ -101,37 +94,9 @@
     {
       "tag": "CreateField",
       "model": "Recipe",
-      "field": "yield",
-      "type": "String",
-      "arity": "Required"
-    },
-    {
-      "tag": "CreateField",
-      "model": "Recipe",
-      "field": "source",
-      "type": "String",
-      "arity": "Required"
-    },
-    {
-      "tag": "CreateField",
-      "model": "Recipe",
-      "field": "author",
-      "type": "String",
-      "arity": "Required"
-    },
-    {
-      "tag": "CreateField",
-      "model": "Recipe",
       "field": "notes",
       "type": "String",
       "arity": "Required"
-    },
-    {
-      "tag": "CreateField",
-      "model": "Recipe",
-      "field": "image",
-      "type": "String",
-      "arity": "Optional"
     },
     {
       "tag": "CreateField",

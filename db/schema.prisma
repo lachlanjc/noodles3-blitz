@@ -1,5 +1,5 @@
 datasource postgres {
-  provider = "postgres"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -9,15 +9,10 @@ generator client {
 
 model Recipe {
   id           Int      @default(autoincrement()) @id
-  description  String
   title        String
   ingredients  String
   instructions String
-  yield        String
-  source       String
-  author       String
   notes        String
-  image        String?
   isFavorite   Boolean  @default(false)
   createdAt    DateTime @default(now())
 }

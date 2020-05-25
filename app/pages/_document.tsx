@@ -1,4 +1,4 @@
-import {Document, Html, DocumentHead, Main, NextScript /*DocumentContext*/} from 'blitz'
+import { Document, Html, DocumentHead, Main, NextScript /*DocumentContext*/ } from "blitz"
 
 class MyDocument extends Document {
   // Only uncomment if you need to customize this behaviour
@@ -10,7 +10,12 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <DocumentHead />
+        <DocumentHead>
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css"
+          />
+        </DocumentHead>
         <body>
           <Main />
           <NextScript />
