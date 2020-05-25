@@ -3,7 +3,7 @@ import useForm from "app/util/useForm"
 
 type RecipeFormProps = {
   initialValues: any
-  onSubmit: () => any
+  onSubmit: (data: any) => any
 }
 
 const RecipeForm: React.FC<RecipeFormProps> = ({ initialValues, onSubmit }) => {

@@ -1,7 +1,7 @@
 import db, { FindManyRecipeArgs } from "db"
 
 type GetRecipesInput = {
-  where: FindManyRecipeArgs["where"]
+  where?: FindManyRecipeArgs["where"]
   orderBy?: FindManyRecipeArgs["orderBy"]
   skip?: FindManyRecipeArgs["skip"]
   after?: FindManyRecipeArgs["after"]
