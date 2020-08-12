@@ -10,6 +10,9 @@ export const Recipe: React.FC = () => {
 
   return (
     <div>
+      <Head>
+        <title>{recipe.title} – Noodles</title>
+      </Head>
       <h1>{recipe.title}</h1>
       <pre>{JSON.stringify(recipe, null, 2)}</pre>
 
@@ -35,18 +38,11 @@ export const Recipe: React.FC = () => {
 const ShowRecipePage: React.FC = () => {
   return (
     <div>
-      <Head>
-        <title>Recipe</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main>
         <p>
-          {
-            <Link href="/recipes">
-              <a>Recipes</a>
-            </Link>
-          }
+          <Link href="/recipes">
+            <a>Recipes</a>
+          </Link>
         </p>
 
         <Suspense fallback={<div>Loading…</div>}>
